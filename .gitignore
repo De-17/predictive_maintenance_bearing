@@ -1,0 +1,9 @@
+data/
+models/*_ckpt/
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+.DS_Store
+venv/
+*.log
+mlruns/
