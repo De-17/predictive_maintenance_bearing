@@ -5,12 +5,14 @@ An end-to-end MLOps pipeline for bearing fault classification and anomaly detect
 ## Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/iamved/predictive_maintenance_bearings.git
+   git clone https://github.com/De-17/predictive_maintenance_bearings.git
    cd predictive_maintenance_bearings
    ```
 
 2. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -23,16 +25,19 @@ An end-to-end MLOps pipeline for bearing fault classification and anomaly detect
 ## Usage
 
 Run the main pipeline:
+
 ```bash
 python src/main_pipeline.py
 ```
 
 Start the FastAPI server:
+
 ```bash
 uvicorn src.deployment_app:app --host 0.0.0.0 --port 8000
 ```
 
 Test endpoints:
+
 - Classifier: `POST /predict/classifier` with a CSV file of vibration data.
 - Anomaly detection: `POST /predict/anomaly` with a CSV file.
 
